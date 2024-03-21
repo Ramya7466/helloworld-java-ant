@@ -27,7 +27,7 @@
 	<mkdir dir="lib"/>
 	<jar destfile="lib/app.jar" basedir="bin">
 	<manifest>
-    		<attribute name="Main-Class" value="HelloWorld.java"/>
+    		<attribute name="Main-Class" value="HelloWorld.class"/>
   	</manifest>
 	</jar>
 </target>
