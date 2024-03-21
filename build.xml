@@ -25,7 +25,11 @@
 <target name="package" depends="compile">
 	<echo message="We are in package target........."/>
 	<mkdir dir="lib"/>
-	<jar destfile="lib/app.jar" basedir="bin"/>
+	<jar destfile="lib/app.jar" basedir="bin">
+	<manifest>
+    		<attribute name="Main-Class" value="com.acme.checksites.Main"/>
+  	</manifest>
+	</jar>
 </target>
 
 </project>
